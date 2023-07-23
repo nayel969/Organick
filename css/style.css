@@ -408,7 +408,7 @@ li.sub__item > a:hover {
 
 /*==========  Banner Section  ==========*/
 .banner {
-  background-image: url(../imgs/banner-pattern.png);
+  background-image: url(../imgs/banner-pattern.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -705,7 +705,7 @@ li.sub__item > a:hover {
 
 /*==========  Testimonials Section  ==========*/
 .testimonial {
-  background-image: url(../imgs/bg-testimonial.png);
+  background-image: url(../imgs/bg-testimonial.webp);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1096,7 +1096,7 @@ li.sub__item > a:hover {
 
 /*==========  Newsletter Section  ==========*/
 .newsletter__box {
-  background-image: url(../imgs/bg-newsletter.jpg);
+  background-image: url(../imgs/bg-newsletter.webp);
   background-position: center;
   background-size: cover;
   padding: 35px 25px;
