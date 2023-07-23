@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./imgs/favcon-32x32.png" type="image/x-icon">
+    <title>Organick Store</title>
+</head>
+
+<body>
+
+    <!--===== Header Section =====-->
+    <div class="header" id="home">
+        <div class="container | header__wrapper">
+            <div class="header__box">
+                <button class="hamburger-btn" data-nav-btn><i class="fa-solid fa-bars"></i></button>
+                <a class="header-logo" href="index.html"><img src="./imgs/Logo.svg" alt="Header logo"></a>
+            </div>
+            <a href="#" class="cart-btn">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <small>Cart (0)</small>
+            </a>
+            <div class="navbar" data-navbar>
+                <div class="navbar__box">
+                    <a class="navbar-logo" href="index.html"><img src="./imgs/Logo.svg" alt="Navbar logo"></a>
+                    <button class="close-btn" data-nav-btn><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="navbar__search">
+                    <form>
+                        <input type="search">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <ul class="list__menu">
+                    <li class="list__item"><a href="index.html">Home</a></li>
+                    <li class="list__item"><a href="#about">About</a></li>
+                    <li class="dropdown | list__item">
+                        <a class="dropdown-item" data-dropdown-link href="">
+                            <span>Pages</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a>
+                        <ul class="sub__menu" data-submenu>
+                            <li class="sub__item"><a href="#">Service</a></li>
+                            <li class="sub__item"><a href="#">Portfolio</a></li>
+                            <li class="sub__item"><a href="#">Team</a></li>
+                            <li class="sub__item"><a href="#">Blog</a></li>
+                            <li class="sub__item"><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="list__item"><a href="#">Shop</a></li>
+                    <li class="list__item"><a href="#">Projects</a></li>
+                    <li class="list__item"><a href="#news">News</a></li>
+                </ul>
+            </div>
+            <div class="overlay" data-nav-btn data-overlay></div>
+        </div>
+    </div>
+
+    <!--===== Banner Section =====-->
+    <section class="banner">
+        <div class="container | banner__wrapper">
+            <div class="banner__content">
+                <small class="banner__slogan">100% Natural Food</small>
+                <h2 class="banner__title">Choose the best healthier way of life</h2>
+                <p class="banner__des">Making mindful and informed food choices can help prevent
+                    certain diseases and promote longevity.</p>
+                <a class="btn yellow-btn" href="#">
+                    <span>Explore Now</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+            </div>
+            <div class="banner__img">
+                <img src="./imgs/banner-img.png" alt="Banner image">
+            </div>
+        </div>
+    </section>
+
+    <!--===== Banner Offer Section =====-->
+    <section class="offer | py-50">
+        <div class="container | offer__wrapper">
+            <a href="#"><img src="./imgs/offer-01.png"></a>
+            <a href="#"><img src="./imgs/offer-02.png"></a>
+        </div>
+    </section>
+
+    <!--===== About Section =====-->
+    <section class="about" id="about">
+        <div class="container | about__wrapper">
+            <div class="about__img">
+                <img src="./imgs/about-img.png" alt="About image">
+            </div>
+            <div class="about__content">
+                <div class="about__head">
+                    <small class="about__slogan">About Us</small>
+                    <h2 class="about__title">We Believe in Working
+                        Accredited Farmers</h2>
+                    <p class="about__des">Simply dummy text of the printing and
+                        typesetting industry. Lorem had ceased to been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley.</p>
+                </div>
+                <ul class="about__points">
+                    <li class="about__point">
+                        <img class="point__icon" src="./imgs/point-icon-01.jpg">
+                        <div class="point__info">
+                            <h4 class="point__title">Organic Foods Only</h4>
+                            <p class="point__des">Lorem ipsum is simply dummy text of
+                                the printing and typesetting industry.</p>
+                        </div>
+                    </li>
+                    <li class="about__point">
+                        <img class="point__icon" src="./imgs/point-icon-02.jpg">
+                        <div class="point__info">
+                            <h4 class="point__title">Quality Standards</h4>
+                            <p class="point__des">Lorem ipsum is simply dummy text of
+                                the printing and typesetting industry.</p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="btn navy-btn" href="#">
+                    <span>Shop Now</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Products Section =====-->
+    <section class="product">
+        <div class="container">
+            <div class="heading">
+                <small>Categories</small>
+                <h2>Our Products</h2>
+            </div>
+            <ul class="product__wrapper">
+                <!-- Product Box [1] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Vegetable</a>
+                    <a class="product__img" href="#"><img src="./imgs/prodct-01.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Calabrese Broccoli</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$12.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Product Box [2] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Fresh</a>
+                    <a class="product__img" href="#"><img src="./imgs/prodct-02.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Fresh Banana Fruites</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$14.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Product Box [3] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Millets</a>
+                    <a class="product__img" href="#"><img src="./imgs/prodct-03.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>White Nuts</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$15.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Product Box [4] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Vegetable</a>
+                    <a class="product__img" href="#"><img src="./imgs/prodct-04.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Vegan Red Tomato</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$17.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Product Box [5] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Health</a>
+                    <a class="product__img" href="#"><img src="./imgs/prodct-05.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Mung Bean</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$11.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Product Box [6] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Nuts</a>
+                    <a class="product__img" href="#"><img src="./imgs/prodct-06.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Brown Hazelnut</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$12.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Product Box [7] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Fresh</a>
+                    <a class="product__img" href="#"><img src="./imgs/prodct-07.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Eggs</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$14.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Product Box [8] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Fresh</a>
+                    <a class="product__img" href="#"><img src="./imgs/prodct-08.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Zelco Suji Elaichi Rusk</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$15.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a class="btn navy-btn" href="#">
+                <span>Load More</span>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--===== Testimonials Section =====-->
+    <section class="testimonial | py-50">
+        <div class="container">
+            <div class="heading">
+                <small>Testimonial</small>
+                <h2>What Our Customer Saying?</h2>
+            </div>
+            <!-- Testimonials Slider  -->
+            <div class="testimonial__slider">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide [1] -->
+                        <div class="swiper-slide">
+                            <img class="testmon__img" src="./imgs/testmon-01.webp">
+                            <div class="stars-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testmon__des">
+                                Simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum simply dummy text of the printing and typesetting
+                                industry, has imet elegapontial.
+                            </p>
+                            <h3 class="testmon__name">Jack Taylor</h3>
+                            <p class="testmon__job">Consumer</p>
+                        </div>
+                        <!-- Slide [2] -->
+                        <div class="swiper-slide">
+                            <img class="testmon__img" src="./imgs/testmon-02.webp">
+                            <div class="stars-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testmon__des">
+                                Simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum simply dummy text of the printing and typesetting
+                                industry, has imet elegapontial.
+                            </p>
+                            <h3 class="testmon__name">Sara Paul</h3>
+                            <p class="testmon__job">Consumer</p>
+                        </div>
+                        <!-- Slide [3] -->
+                        <div class="swiper-slide">
+                            <img class="testmon__img" src="./imgs/testmon-03.webp">
+                            <div class="stars-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testmon__des">
+                                Simply dummy text of the printing and typesetting industry.
+                                Lorem Ipsum simply dummy text of the printing and typesetting
+                                industry, has imet elegapontial.
+                            </p>
+                            <h3 class="testmon__name">Sam Helios</h3>
+                            <p class="testmon__job">Consumer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Testimonials Stats  -->
+            <div class="testimonial__stats">
+                <div class="stats__item">
+                    <strong>100%</strong>
+                    <h5>Organic</h5>
+                </div>
+                <div class="stats__item">
+                    <strong>285</strong>
+                    <h5>Active <br> Product</h5>
+                </div>
+                <div class="stats__item">
+                    <strong>350+</strong>
+                    <h5>Organic <br> Orchads</h5>
+                </div>
+                <div class="stats__item">
+                    <strong>25+</strong>
+                    <h5>Years of <br> Farming</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Organic Offer Section =====-->
+    <section class="organic__offer">
+        <div class="container">
+            <div class="heading">
+                <div class="offer-title | heading">
+                    <small>Offer</small>
+                    <h2>We Offer Organic For You</h2>
+                </div>
+                <a class="btn yellow-btn" href="#">
+                    <span>View All Product</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+            </div>
+            <ul class="product__wrapper">
+                <!-- Offer Box [1] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Vegetable</a>
+                    <a class="product__img" href="#"><img src="./imgs/organic-offer-01.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Mung Bean</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$11.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Offer Box [2] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Vegetable</a>
+                    <a class="product__img" href="#"><img src="./imgs/organic-offer-02.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Zucchini</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$12.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Offer Box [3] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Vegetable</a>
+                    <a class="product__img" href="#"><img src="./imgs/organic-offer-03.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Onion</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$17.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+                <!-- Offer Box [4] -->
+                <li class="product__item">
+                    <a class="product__cat" href="#">Vegetable</a>
+                    <a class="product__img" href="#"><img src="./imgs/organic-offer-04.png"></a>
+                    <a class="product__name" href="#">
+                        <h4>Cabbage</h4>
+                    </a>
+                    <div class="product__details">
+                        <div class="product__price">
+                            <span class="old-price">$20.00</span>
+                            <span class="new-price">$13.00</span>
+                        </div>
+                        <div class="stars-rate">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a class="btn yellow-btn" href="#">
+                <span>View All Product</span>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!--===== Who we are Section =====-->
+    <section class="whowe">
+        <div class="whowe__img-out">
+            <img src="./imgs/who-we-are.jpg">
+        </div>
+        <div class="container">
+            <div class="whowe__wrapper">
+                <div class="whowe__img-in">
+                    <img src="./imgs/who-we-are.jpg">
+                </div>
+                <div class="whowe__content">
+                    <div class="heading">
+                        <small>Eco Friendly</small>
+                        <h2>Econis is a Friendly Organic Store</h2>
+                    </div>
+                    <ul class="whowe__list">
+                        <li class="whowe__item">
+                            <h4 class="whowe__title">Start with Our Company First</h4>
+                            <p class="whowe__des">Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptat accusantium doloremque laudantium.
+                                Sed ut perspiciatis.</p>
+                        </li>
+                        <li class="whowe__item">
+                            <h4 class="whowe__title">Learn How to Grow Yourself</h4>
+                            <p class="whowe__des">Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptat accusantium doloremque laudantium.
+                                Sed ut perspiciatis.</p>
+                        </li>
+                        <li class="whowe__item">
+                            <h4 class="whowe__title">Farming Strategies of Today</h4>
+                            <p class="whowe__des">Sed ut perspiciatis unde omnis iste natus
+                                error sit voluptat accusantium doloremque laudantium.
+                                Sed ut perspiciatis.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Gallery Section =====-->
+    <div class="gallery">
+        <div class="gallery__box">
+            <a href="#"><img class="gallery__img" src="./imgs/gallery-01.jpg"></a>
+            <button class="btn">Organic Juice</button>
+        </div>
+        <div class="gallery__box">
+            <a href="#"><img class="gallery__img" src="./imgs/gallery-02.jpg"></a>
+            <button class="btn">Organic Food</button>
+        </div>
+        <div class="gallery__box">
+            <a href="#"><img class="gallery__img" src="./imgs/gallery-03.jpg"></a>
+            <button class="btn">Nuts Cookies</button>
+        </div>
+    </div>
+
+    <!--===== Blog Section =====-->
+    <div class="blog" id="news">
+        <div class="container">
+            <div class="heading">
+                <div class="blog-title | heading">
+                    <small>News</small>
+                    <h2>Discover weekly content about organic food, & more</h2>
+                </div>
+                <a class="btn" href="#">
+                    <span>More News</span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+            </div>
+            <div class="blog__wrapper">
+                <!-- Blog Box [1] -->
+                <div class="blog__box">
+                    <div class="blog__time">
+                        <span>25</span>
+                        <span>Nov</span>
+                    </div>
+                    <img class="blog__img" src="./imgs/blog-01.png">
+                    <div class="blog__info">
+                        <div class="blog__author">
+                            <i class="fa-solid fa-user"></i>
+                            <span>By Richard Paul</span>
+                        </div>
+                        <h4 class="blog__title">The Benefits of Vitamin D & How to Get It</h4>
+                        <p class="blog__des">Lorem ipsum simply dummy text of the printing
+                            and typesetting industry.</p>
+                        <a class="btn yellow-btn" href="#">
+                            <span>Read More</span>
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Blog Box [2] -->
+                <div class="blog__box">
+                    <div class="blog__time">
+                        <span>25</span>
+                        <span>Nov</span>
+                    </div>
+                    <img class="blog__img" src="./imgs/blog-02.png">
+                    <div class="blog__info">
+                        <div class="blog__author">
+                            <i class="fa-solid fa-user"></i>
+                            <span>By Sam Tomas</span>
+                        </div>
+                        <h4 class="blog__title">Our Favourite Summertime Tommeto</h4>
+                        <p class="blog__des">Lorem ipsum simply dummy text of the printing
+                            and typesetting industry.</p>
+                        <a class="btn yellow-btn" href="#">
+                            <span>Read More</span>
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===== Newsletter Section =====-->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter__box">
+                <h2 class="news__head">Subscribe to our Newsletter</h2>
+                <form class="news__form">
+                    <input type="email" placeholder="Your Email Address">
+                    <a class="btn navy-btn" href="#">
+                        <span>Subscribe</span>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--===== Footer Section =====-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__contact">
+                    <h2 class="contact-head">Contact Us</h2>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <strong>Email</strong>
+                            <span>needhelp@Organia.com</span>
+                        </li>
+                        <li class="contact-item">
+                            <strong>Phone</strong>
+                            <span>+1 445-667-889</span>
+                        </li>
+                        <li class="contact-item">
+                            <strong>Address</strong>
+                            <span>45 Road, Borklyn street, USA</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__logo">
+                    <a class="footer-logo" href="#">
+                        <img src="./imgs/Logo.svg" alt="Footer logo">
+                    </a>
+                    <p class="footer-des">Simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum simply dummy text of the printing</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer__pages">
+                    <h2 class="pages-head">Utility Pages</h2>
+                    <div class="pages-list">
+                        <a href="#">Style Guide</a>
+                        <a href="#">404 Not Found</a>
+                        <a href="#">Password Protected</a>
+                        <a href="#">Licences</a>
+                        <a href="#">Changelog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>Copyright © <strong>Organick</strong> 2023 | Designed by <strong>Nayel</strong></p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Main JS File  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
